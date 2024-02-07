@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Input, Button } from 'antd';
 
 class MarkdownInput extends Component {
   state = { input: '' };
@@ -16,8 +17,19 @@ class MarkdownInput extends Component {
   render() {
     return (
       <div>
-        <textarea value={this.state.input} onChange={this.handleChange} />
-        <button onClick={this.handleSave}>Sauvegarder</button>
+        <Input.TextArea 
+          value={this.state.input} 
+          onChange={this.handleChange} 
+          rows={4} // You can set the number of rows for the text area
+          placeholder="Écrivez votre note en markdown ici..." 
+        />
+        <Button 
+          type="primary" 
+          onClick={this.handleSave}
+          style={{ marginTop: '10px' }} // Add some spacing above the button
+        >
+          Sauvegarder
+        </Button>
       </div>
     );
   }
