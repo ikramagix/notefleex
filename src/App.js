@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import MarkdownInput from './MarkdownInput';
+import NoteDisplay from './NoteDisplay';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    markdown: localStorage.getItem('markdown') || ''
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <MarkdownInput />
+        <NoteDisplay markdown={this.state.markdown} />
+      </div>
+    );
+  }
 }
 
-export default App;
+export default App; 
