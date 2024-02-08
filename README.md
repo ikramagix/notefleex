@@ -30,7 +30,7 @@ A React application that enables users to create notes with Markdown formatting 
 2. Install necessary dependencies by running `npm install` in the project directory.
 3. Start the application with `npm start`, which runs it in development mode.
 
-[![Link to production](/mon-bloc-notes/public/bored_code_jv.gif)](notefleex.netlify.app)
+[![Link to production](./public/bored_code_jv.gif)](notefleex.netlify.app)
 
 ## Future enhancements
 
@@ -38,5 +38,5 @@ A React application that enables users to create notes with Markdown formatting 
 - **Delete functionality**: Enabling users to delete notes they no longer need.
 - **Search feature**: Adding a search bar to filter notes by their titles, facilitating quicker access to specific notes.
 
-[![lol](/mon-bloc-notes/public/nfl-controversy-asterisk.gif)](https://youtu.be/QIIZIRXnDAk?si=P9iCIlLQwBq04xEg&t=46)
+[![lol](./public/nfl-controversy-asterisk.gif)](https://youtu.be/QIIZIRXnDAk?si=P9iCIlLQwBq04xEg&t=46)
 
