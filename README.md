@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# What is **notefleex** ?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that enables users to create notes with Markdown formatting and view them. Stored in the browser's local storage, notes persist between sessions. The interface is built using React and Ant Design, providing a clean and user-friendly experience.
 
-## Available Scripts
+## Key features
 
-In the project directory, you can run:
+- **Create notes**: Users can add new notes, specifying a title and Markdown-formatted content.
+- **View notes**: A sidebar lists all created notes. Clicking on a note's title opens a modal that displays the note's content with Markdown formatting applied.
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **App**: The central component managing application state, including the notes array and the visibility state of modals. It orchestrates the creation of notes and selection for viewing.
+- **MarkdownInput**: This component allows users to input a note's title and content in Markdown. It facilitates the addition of new notes to the application's state.
+- **NoteDisplay**: Utilizes the Showdown library to convert Markdown into HTML, displaying a note's formatted content within a modal for easy reading.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Libraries & Tools
 
-### `npm test`
+- **React**: Utilized for building the user interface with a component-based architecture.
+- **Ant Design (antd)**: Provides a wide range of UI components for building rich interfaces, used here for modals, buttons, and the list component.
+- **Showdown**: A library for converting Markdown into HTML, enabling the formatted display of note content.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How does **notefleex** work ?
 
-### `npm run build`
+- **Adding a Note**: Users can create a new note by entering a title and Markdown content, which is then added to the list of notes.
+- **Viewing a Note**: Selecting a note from the list opens a modal displaying the note's content with applied Markdown formatting, allowing for a focused reading experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup & running the app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository to your local machine.
+2. Install necessary dependencies by running `npm install` in the project directory.
+3. Start the application with `npm start`, which runs it in development mode.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[![Link to production](/mon-bloc-notes/public/bored_code_jv.gif)](notefleex.netlify.app)
 
-### `npm run eject`
+## Future enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Edit functionality**: Implementation of note editing capabilities, allowing users to modify the title and content of existing notes.
+- **Delete functionality**: Enabling users to delete notes they no longer need.
+- **Search feature**: Adding a search bar to filter notes by their titles, facilitating quicker access to specific notes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![lol](/mon-bloc-notes/public/nfl-controversy-asterisk.gif)](https://youtu.be/QIIZIRXnDAk?si=P9iCIlLQwBq04xEg&t=46)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
