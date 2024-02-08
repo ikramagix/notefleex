@@ -38,6 +38,4 @@ A React application that enables users to create notes with Markdown formatting 
 - **Delete functionality**: Enabling users to delete notes they no longer need.
 - **Search feature**: Adding a search bar to filter notes by their titles, facilitating quicker access to specific notes.
 
-<div style="text-align: center;">
-  [![lol](./public/nfl-controversy-asterisk.gif)](https://youtu.be/QIIZIRXnDAk?si=P9iCIlLQwBq04xEg&t=46)
-</div>
+[![lol](./public/nfl-controversy-asterisk.gif)](https://youtu.be/QIIZIRXnDAk?si=P9iCIlLQwBq04xEg&t=46)
