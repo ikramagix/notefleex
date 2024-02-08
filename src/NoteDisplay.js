@@ -8,8 +8,12 @@ class NoteDisplay extends Component {
     const { markdown } = this.props;
     const html = this.converter.makeHtml(markdown);
 
-    return <div dangerouslySetInnerHTML={{ __html: html }} />;
+    return (
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    );
   }
 }
 
 export default NoteDisplay;
+
+
